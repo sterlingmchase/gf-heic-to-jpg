@@ -17,7 +17,7 @@ This plugin converts HEIC files uploaded via Gravity Forms to JPG format using t
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. There are no additional settings required. The plugin will automatically convert HEIC files uploaded through Gravity Forms to JPG.
 
