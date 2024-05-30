@@ -15,7 +15,7 @@ if (!class_exists('GitHub_Updater')) {
 }
 
 if (class_exists('GitHub_Updater')) {
-    new GitHub_Updater(__FILE__, 'your-username', 'gravity-forms-heic-to-jpg-converter');
+    new GitHub_Updater(__FILE__, 'sterlingmchase', 'gf-heic-to-jpg');
 }
 
 // Prevent direct access
