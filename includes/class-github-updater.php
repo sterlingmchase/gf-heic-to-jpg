@@ -29,9 +29,11 @@ class GitHub_Updater {
         }
 
         $url = "https://api.github.com/repos/{$this->username}/{$this->repo}/releases";
-        $this->github_api_result = wp_remote_retrieve_body(wp_remote_get($url));
-        if (!empty($this->github_api_result)) {
-            $this->github_api_result = @json_decode($this->github_api_result);
+        $response = wp_remote_get($url);
+        $body = wp_remote_retrieve_body($response);
+
+        if (!empty($body)) {
+            $this->github_api_result = json_decode($body);
         }
 
         if (is_array($this->github_api_result)) {
@@ -46,6 +48,10 @@ class GitHub_Updater {
 
         $this->init_plugin_data();
         $this->get_repo_release_info();
+
+        if (!isset($transient->checked[$this->slug])) {
+            return $transient;
+        }
 
         $do_update = version_compare($this->github_api_result->tag_name, $transient->checked[$this->slug]);
 
