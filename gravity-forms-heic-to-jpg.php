@@ -1,10 +1,22 @@
 <?php
-/**
- * Plugin Name: Gravity Forms HEIC to JPG Converter
- * Description: Converts HEIC files uploaded via Gravity Forms to JPG using heic2any and supports HEIC files.
- * Version: 1.0.0
- * Author: Sterling Chase
- */
+/*
+Plugin Name: Gravity Forms HEIC to JPG Converter
+Plugin URI: https://github.com/sterlingmchase/gf-heic-to-jpg
+Description: Converts HEIC files uploaded via Gravity Forms to JPG format.
+Version: 1.0.0
+Author: Sterling Chase
+Author URI: https://frontierwp.com
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+if (!class_exists('GitHub_Updater')) {
+    require_once(plugin_dir_path(__FILE__) . 'class-github-updater.php');
+}
+
+if (class_exists('GitHub_Updater')) {
+    new GitHub_Updater(__FILE__, 'your-username', 'gravity-forms-heic-to-jpg-converter');
+}
 
 // Prevent direct access
 if ( ! defined( 'ABSPATH' ) ) {
