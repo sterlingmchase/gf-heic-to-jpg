@@ -3,7 +3,7 @@
 Plugin Name: Gravity Forms HEIC to JPG Converter
 Plugin URI: https://github.com/sterlingmchase/gf-heic-to-jpg
 Description: Converts HEIC files uploaded via Gravity Forms to JPG format.
-Version: 1.0.1
+Version: 1.0.2
 Author: Sterling Chase
 Author URI: https://frontierwp.com
 License: GPLv2 or later
