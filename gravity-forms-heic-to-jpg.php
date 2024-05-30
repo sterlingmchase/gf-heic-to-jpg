@@ -11,7 +11,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 if (!class_exists('GitHub_Updater')) {
-    require_once(plugin_dir_path(__FILE__) . '../includes/class-github-updater.php');
+    require_once(plugin_dir_path(__FILE__) . '/includes/class-github-updater.php');
 }
 
 if (class_exists('GitHub_Updater')) {
