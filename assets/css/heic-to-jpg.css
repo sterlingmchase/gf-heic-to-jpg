@@ -1,0 +1,37 @@
+.gf-heic-notification {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #d4edda !important; /* Success color */
+    color: #155724 !important;
+    font-size: 14px !important;
+    border: 1px solid #c3e6cb !important;
+    border-radius: 4px !important;
+    display: flex !important;
+    align-items: center !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) !important;
+    transition: opacity 0.4s ease-in-out !important;
+    opacity: 0 !important;
+}
+
+.gf-heic-notification.show {
+    opacity: 1 !important;
+}
+
+.gf-heic-notification.error {
+    background-color: #f8d7da !important; /* Error color */
+    color: #721c24 !important;
+    border: 1px solid #f5c6cb !important;
+}
+
+.gf-heic-notification .icon {
+    font-size: 18px !important;
+    margin-right: 10px !important;
+}
+
+.success-icon {
+    color: #28a745 !important;
+}
+
+.error-icon {
+    color: #dc3545 !important;
+}
